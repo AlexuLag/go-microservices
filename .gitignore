@@ -14,3 +14,14 @@
 .idea/
 .vscode/
 *.swp
+
+# Archivos ejecutables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Archivos binarios específicos del proyecto
+**/bin/
+**/build/
