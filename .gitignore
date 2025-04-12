@@ -1,0 +1,16 @@
+/project/db-data/
+# Archivos y carpetas de Go
+*.test
+*.out
+/vendor/
+/go.work
+
+
+# Archivos del sistema
+.DS_Store
+.env
+
+# Carpetas de IDE
+.idea/
+.vscode/
+*.swp
