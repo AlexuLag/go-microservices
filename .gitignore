@@ -25,3 +25,12 @@
 # Archivos binarios específicos del proyecto
 **/bin/
 **/build/
+/authentication-service/authApp
+/broker-service/brokerApp
+/logger-service/loggerApp
+/listener-service/listenerApp
+/mailer-service/mailerApp
+/mail-service/mailApp
+/front-end/frontApp
+/logger-service/loggerServiceApp
+/mail-service/mailerApp
