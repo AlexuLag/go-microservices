@@ -3,7 +3,7 @@ services:
   broker-service:
     image: alexulag/broker-service:1.0.0
     ports:
-      - "8080:8080"
+      - "8080:80"
     deploy:
       mode: replicated
       replicas: 1
