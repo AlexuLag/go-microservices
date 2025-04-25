@@ -7,8 +7,10 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"io"
 	"net/http"
 	"net/rpc"
+	"strconv"
 	"time"
 
 	"google.golang.org/grpc"
@@ -131,7 +133,8 @@ func (app *Config) authenticate(w http.ResponseWriter, a AuthPayload) {
 		app.errorJSON(w, errors.New("invalid credentials"))
 		return
 	} else if response.StatusCode != http.StatusAccepted {
-		app.errorJSON(w, errors.New("error calling auth service"))
+		bodyBytes, _ := io.ReadAll(response.Body)
+		app.errorJSON(w, errors.New("error calling auth service code: "+string(bodyBytes)+" "+strconv.Itoa(response.StatusCode)))
 		return
 	}
 

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: broker-service
-        image: "alexulag/broker-service:1.0.1"
+        image: "alexulag/broker-service:1.0.4"
         resources:
           requests:
             memory: "64Mi"

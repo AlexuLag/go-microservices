@@ -35,10 +35,10 @@ metadata:
   name: logger-service
 spec:
   selector:
-    name: logger-service
+    app: logger-service
   ports:
     - protocol: TCP
-      name: main-port
+      name: web-port
       port: 80
       targetPort: 80
     - protocol: TCP
